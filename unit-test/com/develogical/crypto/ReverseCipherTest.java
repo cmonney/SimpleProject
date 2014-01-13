@@ -19,4 +19,10 @@ public class ReverseCipherTest {
         String result = new ReverseCipher().decode("xof nworb kciuq eht");
         assertThat(result, is("the quick brown fox"));
     }
+	
+    @Test
+    public void decodesStringSubstitutingLettersFailed() {
+        String result = new ReverseCipher().decode("xof nworb kciuq eht");
+        assertThat(result, is("the quick brown fox!"));
+    }
 }
