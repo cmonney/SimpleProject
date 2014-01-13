@@ -22,7 +22,7 @@ public class ReverseCipherTest {
 	
     @Test
     public void decodesStringSubstitutingLettersFailed() {
-        String result = new ReverseCipher().decode("nur lliw yticmaet tath os");
+        String result = new ReverseCipher().decode("nur lliw yticmaet taht os");
         assertThat(result, is("so that teamcity will run"));
     }
 }
